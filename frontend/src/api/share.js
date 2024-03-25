@@ -32,5 +32,5 @@ export async function create(url, password = "", expires = "", unit = "hours") {
 }
 
 export function getShareURL(share) {
-  return createURL("share/" + share.hash, {}, false);
+  return "https://wileynet.online:9700/share/" + share.hash;
 }
